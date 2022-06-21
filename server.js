@@ -1,7 +1,10 @@
 const express = require('express');
 const { request } = require('http');
 const app = express();
+const cors = require('cors');
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
 
 const foods = {
     'apple': {
